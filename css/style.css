@@ -1,0 +1,534 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+
+/* -------------------------------- */ /* GENERAL */ /* -------------------------------- */
+
+@font-face {
+	font-family: 'Painted Paradise';
+	src: url('fonts/PaintedParadise.woff2') format('woff2'), url('fonts/PaintedParadise.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	background-color: black;
+}
+.container {
+	width: 60%;
+	margin: auto;
+	outline: solid 30px rgba(0,0,0,0.4);
+	outline-offset: -30px;
+	background-color: white;
+}
+/* -------------------------------- */ /* LOGO */ /* -------------------------------- */
+
+.logo {
+	margin: 50px 0 0 50px;
+}
+/* -------------------------------- */ /* HEADER PICTURES */ /* -------------------------------- */
+
+.nav_home {
+	background-image: url(../images/header_home.png);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	height: 750px;
+}
+.nav_info {
+	background-image: url(../images/header_info.png);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	height: 750px;
+}
+.nav_tickets {
+	background-image: url(../images/header_tickets.png);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	height: 700px;
+}
+.nav_lineup {
+	background-image: url(../images/header_lineup.png);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	height: 750px;
+}
+.nav_news {
+	background-image: url(../images/header_news.png);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	height: 750px;
+}
+.nav_photos {
+	background-image: url(../images/header_photos.png);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	height: 750px;
+}
+.nav_videos {
+	background-image: url(../images/header_video.png);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	height: 750px;
+}
+.nav_history {
+	background-image: url(../images/header_history.png);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	height: 750px;
+}
+.nav_sitemap {
+	background-image: url(../images/header_sitemap.png);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	height: 750px;
+}
+/* -------------------------------- */ /* DROPDOWN MENU */ /* -------------------------------- */
+
+.nav_desktop {
+	width: 45%;
+	display: inline-block;
+	float: right;
+	margin-top: 70px;
+}
+.nav_desktop ul {
+	padding: 0px;
+	margin: 0px;
+	text-align: center;
+	display: inline-block;
+	vertical-align: bottom;
+	list-style-type: none;
+	background-color: rgba(0,0,0,0.10);
+}
+.nav_desktop li {
+	display: inline-block;
+}
+.nav_desktop li a, .dropbtn {
+	display: block;
+	text-align: center;
+	padding: 14px 15px;
+	text-decoration: none;
+	color: #FFFFFF;
+}
+.nav_desktop li a:hover, .dropdown:hover .dropbtn {
+	background-color: rgba(0,0,0,0.50);
+}
+.nav_desktop li.dropdown {
+	display: inline-block;
+}
+.dropdown-content {
+	display: none;
+	position: absolute;
+	min-width: 100px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+}
+.dropdown-content a {
+	color: #FFFFFF;
+	padding: 14px 30px;
+	text-decoration: none;
+	display: block;
+	text-align: left;
+}
+.dropdown-content a:hover {
+	background-color: rgba(0,0,0,0.50);
+}
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+/* -------------------------------- */ /* HAMBURGER MENU */ /* -------------------------------- */
+
+.sidenav, span {
+	opacity: 0;
+
+}
+
+/* -------------------------------- */ /* CONTENT */ /* -------------------------------- */
+
+.content{
+	width: 90%;
+	margin: auto;
+	margin-bottom: 100px;
+	padding: 0 50px;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Painted Paradise';
+}
+
+#header {
+	text-align: center;
+}
+hr {
+	clear: both;
+	width: 50%;
+	margin: auto;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+
+/* Map */
+.mapouter {
+	position: relative;
+	text-align: right;
+	height: 60%;
+	width: 50%;
+	display: inline-block;
+}
+.gmap_canvas {
+	overflow: hidden;
+	background: none;
+	height: 80%;
+	width: 100%;
+}
+
+/* Tickets */
+
+.tickets {
+	vertical-align: center;
+	border: 1px solid black;
+	margin: 5px 0;
+	font-family: 'Painted Paradise';
+	font-size: 160%;
+}
+
+.tickets a {
+	text-align: center;
+	text-decoration: none;
+	color: black;
+	display: block;
+	padding: 10px;
+}
+
+.tickets a:hover {
+	background-color: rgba(0,0,0,0.10);
+}
+
+/* Form */
+form {
+	width: 46%;
+	display: inline-block;
+	margin-left: 30px;
+	vertical-align: top;
+}
+fieldset {
+	padding: 15px;
+	border: 1px solid #373E54;
+	border-radius: 5px;
+}
+legend {
+	padding: 0 15px;
+	font-family: 'Painted Paradise';
+	font-size: 30px;
+}
+.feedback-input {
+	color: #505A7A;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 10px;
+	border-radius: 5px;
+	line-height: 22px;
+	border: 1px solid #373E54;
+	padding: 13px;
+	margin-bottom: 15px;
+	width: 100%;
+	box-sizing: border-box;
+	outline: 0;
+}
+.feedback-input:focus {
+	border: 2px solid #373E54;
+}
+textarea {
+	height: 150px;
+	line-height: 150%;
+	resize: vertical;
+}
+[type="submit"], [type="reset"] {
+	width: 40%;
+	background: #505A7A;
+	border-radius: 15px;
+	border: none;
+	cursor: pointer;
+	color: white;
+	font-size: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin-top: -4px;
+}
+[type="submit"]:hover, [type="reset"]:hover {
+	background: #373E54;
+}
+/* Artists */
+
+.news_artists {
+	width: 90%;
+	margin: auto;
+}
+.artist_news_name, .artists_news_p {
+	display: inline-block;
+	vertical-align: top;
+	width: 70%;
+}
+.artists_img {
+	float: left;
+	margin-right: 30px;
+}
+audio {
+	width: 100%;
+}
+/* News */
+
+.news_img {
+	float: right;
+	margin-left: 30px;
+}
+.news_name, .news_p {
+	text-align: justify;
+}
+/* History */
+
+.history_img {
+	display: block;
+	margin: auto;
+}
+details {
+	border: solid 1px black;
+	padding: 5px 15px;
+	z-index: 5;
+
+}
+summary {
+	font-family: 'Painted Paradise';
+	font-size: 170%;
+}
+
+/* Info */ 
+.info_img {
+	width: 60%;
+	display: block;
+	margin: auto;
+}
+
+#map {
+	width: 100%;
+}
+
+.videos {
+	width: 45%;
+}
+
+/* Sitemap */
+.content li a {
+	text-decoration: none;
+	color: #6D799F;
+}
+.content li {
+	margin-left: 30px;
+}
+.content li a:hover {
+	color: #373E54;
+}
+
+/* -------------------------------- */ /* FOOTER PICTURES */ /* -------------------------------- */
+
+#footer_home {
+	background-image: url(../images/footer_home.png);
+	background-repeat: no-repeat;
+	background-position: bottom;
+	background-size: 100%;
+	height: 670px;
+}
+#footer_info {
+	background-image: url(../images/footer_info.png);
+	background-repeat: no-repeat;
+	background-position: bottom;
+	background-size: 100%;
+	height: 670px;
+}
+#footer_tickets {
+	background-image: url(../images/footer_tickets.png);
+	background-repeat: no-repeat;
+	background-position: bottom;
+	background-size: 100%;
+	height: 670px;
+}
+#footer_lineup {
+	background-image: url(../images/footer_lineup.png);
+	background-repeat: no-repeat;
+	background-position: bottom;
+	background-size: 100%;
+	height: 670px;
+}
+#footer_news {
+	background-image: url(../images/footer_news.png);
+	background-repeat: no-repeat;
+	background-position: bottom;
+	background-size: 100%;
+	height: 670px;
+}
+#footer_photos {
+	background-image: url(../images/footer_photos.png);
+	background-repeat: no-repeat;
+	background-position: bottom;
+	background-size: 100%;
+	height: 670px;
+}
+#footer_videos {
+	background-image: url(../images/footer_videos.png);
+	background-repeat: no-repeat;
+	background-position: bottom;
+	background-size: 100%;
+	height: 670px;
+}
+#footer_history {
+	background-image: url(../images/footer_history.png);
+	background-repeat: no-repeat;
+	background-position: bottom;
+	background-size: 100%;
+	height: 670px;
+}
+#footer_sitemap {
+	background-image: url(../images/footer_sitemap.png);
+	background-repeat: no-repeat;
+	background-position: bottom;
+	background-size: 100%;
+	height: 670px;
+}
+/* -------------------------------- */ /* FOOTER  */ /* -------------------------------- */
+
+.footer_position {
+	padding: 23% 0 0;
+}
+.social, .sponsors {
+	width: 60%;
+	padding: 3% 3%;
+	margin: auto;
+	text-align: center;
+	outline: solid 2px rgba(255,255,255,0.5);
+	outline-offset: -5px;
+}
+.sponsors {
+	background-color: rgba(0,0,0,0.50);
+	padding-bottom: 3%;
+}
+.sponsors img {
+	padding-left: 5px;
+}
+.social {
+	background-color: rgba(0,0,0,0.50);
+	margin-top: 7%;
+}
+.social img {
+	padding-left: 5px;
+}
+
+/* -------------------------------- */ /* MEDIA  */ /* -------------------------------- */
+
+/* * * * * * Smartphone & Small Tablet*/
+@media (min-width:320px) and (max-width: 736px) {
+.container {
+	width: 100%;
+	margin: auto;
+	outline: solid 10px rgba(0,0,0,0.4);
+	outline-offset: -10px;
+}
+/* NAVS */
+.nav_home, .nav_info, .nav_tickets, .nav_lineup, .nav_photos, .nav_news, .nav_videos, .nav_history, .nav_sitemap {
+	height: 300px;
+}
+.nav_desktop {
+	display: none;
+}
+/* CONTENTS */
+	
+.content {
+	padding: 0;
+}
+form {
+	display: block;
+	width: 90%;
+	margin: auto;
+	margin-top: 30px;
+}
+.mapouter {
+	height: 60%;
+	width: 85%;
+	margin: auto;
+	display: block;
+}
+.artists_news_p {
+	width: 90%;
+}
+.history_img {
+	width: 80%;
+}
+.videos {
+	width: 90%;
+}
+/* FOOTER */
+	
+#footer_home, #footer_info, #footer_tickets, #footer_lineup, #footer_news, #footer_photos, #footer_videos, #footer_history {
+	height: 295px;
+}
+.sponsors img, .social img {
+	width: 7%;
+	height: auto;
+	vertical-align: top;
+}
+.sponsors, .social {
+	height: 30px;
+	width: 75%;
+	position: relative;
+	bottom: -10px;
+}
+	
+	
+	/* Nav */
+span {
+	opacity: 1;
+	position: absolute;
+	top: 50px;
+	right: 50px;
+	font-size: 30px;
+	cursor: pointer;
+	color: white
+}
+	
+.sidenav {
+	opacity: 1;
+	height: 100%;
+	width: 0;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	right: 0;
+	background-color: rgba(0,0,0,0.5);
+	overflow-x: hidden;
+	transition: 0.5s;
+	padding-top: 70px;
+}
+	
+.sidenav a {
+	padding: 8px 8px 8px 30px;
+	text-decoration: none;
+	font-size: 20px;
+	color: white;
+	display: block;
+	transition: 0.3s;
+}
+	
+.sidenav a:hover {
+	color: #AAAAAA;
+}
+.sidenav .closebtn {
+	position: absolute;
+	top: 0;
+	right: 25px;
+	font-size: 36px;
+	margin-left: 50px;
+}
+}
